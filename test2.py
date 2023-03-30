@@ -195,31 +195,113 @@
 #                 print(result)
 # Du()
 
-# Q. 16
-def mos():
-    dic = {
-     '.-':'A','-...':'B','-.-.':'C','-..':'D','.':'E','..-.':'F',
-     '--.':'G','....':'H','..':'I','.---':'J','-.-':'K','.-..':'L',
-     '--':'M','-.':'N','---':'O','.--.':'P','--.-':'Q','.-.':'R',
-     '...':'S','-':'T','..-':'U','...-':'V','.--':'W','-..-':'X',
-     '-.--':'Y','--..':'Z'
-    }
-    a=list(input("모스부호 입력 :").split("  "))
-    n=len(a)
-    print(a)
-    pr=[]
-    for i in range(n):
-        b=a[i]
-        c=b.split()
-        for j in range(len(c)):
-           if dic[c[j]] :
-               pr.append(dic[c[j]])
-        pr.append(" ")
-    print("".join(pr))
+# # Q. 16
+# def mos():
+#     dic = {
+#      '.-':'A','-...':'B','-.-.':'C','-..':'D','.':'E','..-.':'F',
+#      '--.':'G','....':'H','..':'I','.---':'J','-.-':'K','.-..':'L',
+#      '--':'M','-.':'N','---':'O','.--.':'P','--.-':'Q','.-.':'R',
+#      '...':'S','-':'T','..-':'U','...-':'V','.--':'W','-..-':'X',
+#      '-.--':'Y','--..':'Z'
+#     }
+#     a=list(input("모스부호 입력 :").split("  "))
+#     n=len(a)
+#     print(a)
+#     pr=[]
+#     for i in range(n):
+#         b=a[i]
+#         c=b.split()
+#         for j in range(len(c)):
+#            if dic[c[j]] :
+#                pr.append(dic[c[j]])
+#         pr.append(" ")
+#     print("".join(pr))
+#
+# mos()
 
-mos()
+import re
+
+# Q. 17
+#  2번
+
+# # Q. 18
+#
+# p = re.compile("[a-z]+")    # a~z까지의 소문자를 반복
+# m = p.search("5 python")    # p의 식을 저 문자열에서 검색해 -> python
+# c = m.start() + m.end()
+# #    p의 index->2
+# #    n의 index->7 end = n index+1
+# print(m)
+# print(m.end())
+# print(c)
+# 10
+
+# Q. 19
+# Q. 20
 
 
+# # p.179~181
+# # Q .1
+#
+# def if_odd(n):
+#     if n % 2 == 1:
+#         return True
+#     else:
+#         return False
 
 
+# # Q .2
+# def avg_numbers(*args):
+#     result = 0
+#     for i in args:
+#         result += i
+#         avg = result / len(args)
+#     return avg
+#
+#
+# print(avg_numbers(1, 2))
+# print(avg_numbers(1, 2, 3, 4, 5))
 
+# # Q. 3
+# input1, input2 = map(int, input("숫자 두개를 공백기준으로 작성해주세요").split())
+#
+# total = input1 + input2
+# print("두 수의 합은 %s 입니다." %total)
+# print("두 수의 합은 {0} 입니다.".format(total))
+
+# # Q. 4
+# # 4
+# print("you" "need" "python")
+# print("you" + "need" + "python")
+# print("you", "need", "python")  # , 기준이면 ? 각 string 단어마다 공백기준으로 나뉘어 나옴
+# print("".join(["you" , "need" , "python"]))
+
+# # Q. 5
+# with open("test.txt","w")as f1:
+#     f1.write("Life is too short")
+#
+# with open("test.txt","r")as f2:
+#     print(f2.readline())
+#
+
+# # Q. 6
+# user_input=input("저장할 내용을 입력하세요 :")
+# f = open("te.txt","a")  #a : 추가 모드
+# f.write(user_input)
+# f.write("\n")
+# f.close()
+#
+
+# # Q. 7
+# with open("test3.txt","r")as f :
+#     body=f.read()
+#     f.close()
+#     body=body.replace("java","python")
+#
+# with open("test3.txt","w")as f:
+#     f.write(body)
+#     f.close()
+
+
+# p.262~265
+# Q. 1
