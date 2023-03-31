@@ -303,5 +303,74 @@ import re
 #     f.close()
 
 
-# p.262~265
-# Q. 1
+# # p.262~265
+# # Q. 1
+# class Calculator:
+#     def __init__(self):
+#         self.value=0
+#     def add(self,n):
+#         self.value+=n
+#         return self.value
+#     def minus(self,n):
+#         self.value=self.value-n
+#         return self.value
+# cal=Calculator()
+# cal.add(10)
+# cal.minus(7)
+# print(cal.value)
+#
+# # Q. 2
+# class MaxLimitCalculator(Calculator):
+#     def add(self,n):
+#         self.value+=n
+#         if self.value>=100:
+#             self.value=100
+#             return self.value
+#         return self.value
+#
+#
+# cal = MaxLimitCalculator()
+# cal.add(50)
+# cal.add(60)
+# print(cal.value)
+
+# # Q. 3
+# # 1.
+# print(all([1,2,abs(-3)-3]))
+# # all 메서드의 [2]의 값이 0이기 때문에 False를 반환
+# # 2.
+# print(chr(ord('a'))=='a')
+# # a를 아스키 코드로 변환하고, 다시 캐릭터로 변환하였기 때문에 같은 문자
+
+# # Q. 4
+# a=[1,-2,3,-5,8,-3]
+# # a[i]<0
+# n=list(filter(lambda x:x>0,a))
+# print(n)
+
+# # Q. 5
+#
+# a=hex(234)
+# print(int(a,16))
+
+'''
+정수로 변환할 값과 
+밑을 int(value, base)의 형태로 입력해줍니다.
+value는 0, base는 10이 디폴트이며,
+base에 2에서 36 사이의 값을 입력할 수 있습니다.
+'''
+
+# # Q. 6
+# n=[1,2,3,4]
+# n=list(map(lambda x:x*3, n))
+# print(n)
+#
+# # Q. 7
+# n=[-8,2,7,5,-3,5,0,1]
+# print(max(n)+min(n))
+#
+# # Q. 8
+# a = 17/3
+# print(round(a,4))
+#
+
